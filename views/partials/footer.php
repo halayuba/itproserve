@@ -51,7 +51,7 @@
               <li class="media mb-4">
                 <i class="d-flex mt-1 mr-3 icon-communication-062 u-line-icon-pro"></i>
                 <div class="media-body">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">support@itproserve.com</a>
+                  support@itproserve.com
                 </div>
               </li>
               <li class="media mb-4">
