@@ -21,7 +21,7 @@
             </h3>
             <h5 class="g-font-weight-700 g-font-size-12 g-mb-20">Currently undergoing complete redesign</h5>
 
-            <p class="mb-0">The aim of this tool is to help job seekers stay organized, focused, and informed by enabling them to manage their job search activities more effectively and to give them an extended overview on important information related to dates and events.</p>
+            <p class="mb-0">The aim of this project is to help job seekers stay organized, focused, and informed by enabling them to manage their job search activities more effectively and to give them an extended overview on important information related to dates and events.</p>
           </div>
         </article>
       </div>
@@ -36,7 +36,7 @@
               <a href="http://​www.xcutable.com" class="g-color-gray-dark-v1 g-color-primary--hover">Xcutable ( ​www.xcutable.com ​)</a>
             </h3>
 
-            <p class="mb-0">The aim of this bug reporting tool is to streamline communication among team members and to give a snapshot overview and a realistic estimate on the project completion progress, bugs and code fixes, tasks, activities, and deliverables related to individual Sprints within a project development.</p>
+            <p class="mb-0">The aim of this bug reporting package is to streamline communication among team members and to give a snapshot overview and a realistic estimate on the project completion progress, bugs and code fixes, tasks, activities, and deliverables related to individual Sprints within a project development.</p>
           </div>
         </article>
       </div>

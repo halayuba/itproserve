@@ -15,15 +15,9 @@
             <h2 class="text-uppercase g-font-weight-700 g-font-size-default g-color-white g-mb-15">ITPROSERVE</h2>
 
             <ul class="list-unstyled g-mb-30 g-mb-0--md">
-              <li class="g-mb-10">
-                <a class="g-color-gray-dark-v5" href="#!">Web design and development</a>
-              </li>
-              <li class="g-mb-10">
-                <a class="g-color-gray-dark-v5" href="#!">Solutions for vertical markets</a>
-              </li>
-              <li class="g-mb-10">
-                <a class="g-color-gray-dark-v5" href="#!">Customized eCommerce solutions</a>
-              </li>
+              <li class="g-mb-10">Web design and development</li>
+              <li class="g-mb-10">Vertical market solutions</li>
+              <li class="g-mb-10">Customized eCommerce solutions</li>
             </ul>
           </div>
 
@@ -75,8 +69,7 @@
         <div class="row">
           <div class="col-md-6 d-flex align-items-center g-mb-15 g-mb-0--md">
             <p class="w-100 mb-0">
-              &copy; Copyright. 2000 - <?php echo date('Y'); ?>. ITPROSERVE. Development by
-              <a class="g-font-weight-600 g-color-white" href="#!">Simon Bashir</a>
+              &copy; Copyright. 2000 - <?php echo date('Y'); ?>. ITPROSERVE.
             </p>
           </div>
 

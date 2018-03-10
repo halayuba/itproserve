@@ -31,12 +31,10 @@
               <li class="nav-item g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
                 <a href="#bestOffers" class="nav-link p-0">Pricing</a>
               </li>
-              <li class="nav-item g-ml-10--lg g-ml-15--xl g-my-7 g-mb-0--lg">
-                <a href="#contact" class="nav-link p-0">Contact</a>
-              </li>
             </ul>
           </div>
 
+          <a href="#contact" class="btn btn-md text-uppercase u-btn-primary g-font-weight-700 g-font-size-12 g-rounded-10 g-px-40 g-py-10">Contact</a>
         </div>
 
         <!-- Responsive Toggle Button -->
