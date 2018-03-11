@@ -1,60 +1,18 @@
 /*
 |--------------------------------------------------------------------------
-| SERVICES
-|--------------------------------------------------------------------------
-*/
-Vue.component('services', {
-  props: ['title', 'icon'],
-  template: `
-        <div class="col-sm-4">
-            <div class="service-box scrollReveal sr-bottom sr-delay-1">
-                <i :class="icon"></i>
-                <h3>{{title}}</h3>
-                  <ul class="ul_class">
-                  <slot></slot>
-                  </ul>
-            </div>
-        </div>
-  `
-});
-
-new Vue({
-  el: "#services"
-});
-/*
-|--------------------------------------------------------------------------
-| THE COMPANY
-|--------------------------------------------------------------------------
-*/
-Vue.component('thecompany', {
-  props: ['title', 'icon'],
-  template: `
-      <div class="col-sm-6 col-md-3">
-          <div class="service-box-2 scrollReveal sr-bottom sr-delay-1">
-              <h3><i :class="icon"></i> {{title}}</h3>
-              <p><slot></slot></p>
-          </div>
-      </div>`
-});
-
-new Vue({
-  el: "#company"
-});
-/*
-|--------------------------------------------------------------------------
-| CONTACT US FORM
+| CONTACT US FORM & MODAL
 |--------------------------------------------------------------------------
 */
 new Vue({
-  el: "#contact",
+  el: "#app",
   data:{
     fld_name: "",
     fld_comment: "",
-    // btn_disabled: true,
+    btn_disabled: true,
     flag: false,
     flag_textarea: false,
-    isVisible: true
-    // flag_textarea2: false
+    isVisible: true,
+    modalOpen: false
   },
   methods:{
     nameFieldValidation(){
@@ -80,6 +38,11 @@ new Vue({
       if(item == "name") this.flag = false;
       if(item == "comment") this.flag_textarea = false;
       this.isVisible = false;
+    },
+    escapeKeyListener: function(evt) {
+      if (evt.keyCode === 27 && this.modalOpen) {
+        this.modalOpen = false;
+      }
     }
   },
   computed:{
@@ -101,5 +64,22 @@ new Vue({
       }
     }
 
+  },
+  watch: {
+    modalOpen: function() {
+      var className = 'modal-open';
+      if (this.modalOpen) {
+        document.body.classList.add(className);
+      } else {
+        document.body.classList.remove(className);
+      }
+    }
+  },
+  created: function() {
+    document.addEventListener('keyup', this.escapeKeyListener);
+  },
+  destroyed: function () {
+    document.removeEventListener('keyup', this.escapeKeyListener);
   }
+
 })

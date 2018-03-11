@@ -1,5 +1,5 @@
 /*======================================
-||||||||| VUE PRACTICE |||||||||
+||||||||| GENERAL |||||||||
 ========================================*/
 .red_color{font-size: .8em; font-weight: lighter; color: red}
 .is-loading{padding: 5px 10px; background-color: blue; radius: 10px}
@@ -8,3 +8,77 @@
 
 .i_color{color: #f6af36 !important}
 .shadow{text-shadow:1px 1px .2em white}
+.modal_link{text-decoration: none !important; cursor: pointer;}
+
+/*======================================
+||||||||| MODAL |||||||||
+========================================*/
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0,0,0,0.75);
+}
+
+#modal.show {
+  display: block;
+}
+
+.modal-content {
+  height: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-content h4 {
+  padding: 0 7em;
+}
+
+.modal-content h5 {
+  padding: 2em 5em;
+}
+
+.modal-content ol {
+  padding: 0 5em;
+}
+
+.modal-content ol > li {
+  margin-bottom: 2em;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 28px 8px;
+  font-size: 4em;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #fff;
+  z-index: 1000;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
+}

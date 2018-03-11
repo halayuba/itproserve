@@ -9,32 +9,38 @@
   <body>
     <main>
 
-      <?php require_once('partials/header.php'); ?>
+      <div id="app">
 
-      <!-- CAROUSEL -->
-      <?php require_once('partials/carousel.php'); ?>
+        <?php require_once('partials/header.php'); ?>
 
-      <!-- ABOUT -->
-      <?php require_once('partials/about.php'); ?>
+        <!-- CAROUSEL -->
+        <?php require_once('partials/carousel.php'); ?>
 
-      <!-- SERVICES -->
-      <?php require_once('partials/services.php'); ?>
+        <!-- ABOUT -->
+        <?php require_once('partials/about.php'); ?>
 
-      <!-- PROJECTS -->
-      <?php require_once('partials/projects.php'); ?>
+        <!-- SERVICES -->
+        <?php require_once('partials/services.php'); ?>
 
-      <!-- HERO -->
-      <?php require_once('partials/hero.html'); ?>
+        <!-- PROJECTS -->
+        <?php require_once('partials/projects.php'); ?>
 
-      <!-- PRICING -->
-      <?php require_once('partials/pricing.html'); ?>
+        <!-- HERO -->
+        <?php require_once('partials/hero.html'); ?>
 
-      <!-- CONTACT -->
-      <?php require_once('partials/contact.php'); ?>
+        <!-- PRICING -->
+        <?php require_once('partials/pricing.html'); ?>
 
-      <!-- FOOTER -->
-      <?php require_once('partials/footer.php'); ?>
+        <!-- CONTACT -->
+        <?php require_once('partials/contact.php'); ?>
 
+        <!-- MODAL -->
+        <?php require_once('partials/modal.php'); ?>
+
+        <!-- FOOTER -->
+        <?php require_once('partials/footer.php'); ?>
+        
+      </div>
 
       <a class="js-go-to u-go-to-v1" href="#!"
          data-type="fixed"

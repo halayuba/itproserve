@@ -8,7 +8,7 @@
         @blur="nameFieldValidation"
         @focusin="removeMsg('name')"
       >
-      <div class="form-control-feedback"
+      <div class="red_color"
         v-show="flag"
       >The name is empty or too short!</div>
     </div>
@@ -32,7 +32,7 @@
       </textarea>
 
       <small class="form-text text-muted">(max. 400 characters)</small>
-      <div class="form-control-feedback"
+      <div class="red_color"
         v-show="flag_textarea"
       >You've been very brief. Please give more details!
       </div>
