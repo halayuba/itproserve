@@ -8,7 +8,7 @@
       <div class="text-center text-md-left g-brd-top g-brd-gray-dark-v2 g-py-30">
         <div class="row">
           <div class="col-md-12 col-lg-4 g-mb-25 g-mb-0--lg">
-            <img src="public/img/logo3.png" width="200">
+            <img src="public/img/ITproSERVE-Logo2-alt-2.png" width="200">
           </div>
 
           <div class="col-md-12 col-lg-4 g-mb-25 g-mb-0--lg">
@@ -16,8 +16,8 @@
 
             <ul class="list-unstyled g-mb-30 g-mb-0--md">
               <li class="g-mb-10">Web design and development</li>
-              <li class="g-mb-10">Vertical market solutions</li>
-              <li class="g-mb-10">Customized eCommerce solutions</li>
+              <li class="g-mb-10">Customized restaurant solutions</li>
+              <li class="g-mb-10">Customized shopping cart solutions</li>
             </ul>
           </div>
 
