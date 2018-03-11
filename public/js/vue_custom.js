@@ -8,7 +8,7 @@ new Vue({
   data:{
     fld_name: "",
     fld_comment: "",
-    btn_disabled: true,
+    // btn_disabled: true,
     flag: false,
     flag_textarea: false,
     isVisible: true,
