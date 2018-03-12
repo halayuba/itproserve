@@ -12,7 +12,7 @@ new Vue({
     flag: false,
     flag_textarea: false,
     isVisible: true,
-    modalOpen: false
+    modalOpen: false,
   },
   methods:{
     nameFieldValidation(){
@@ -43,6 +43,13 @@ new Vue({
       if (evt.keyCode === 27 && this.modalOpen) {
         this.modalOpen = false;
       }
+    },
+    callSweetAlert() {
+      swal({
+          text: 'Coming Soon',
+          timer: 4000,
+          type: 'info'
+      });
     }
   },
   computed:{

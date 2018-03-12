@@ -74,11 +74,64 @@ body.modal-open {
   font-weight: 100;
   line-height: 1;
 }
+/*
+@media (min-width: 744px) {
+  #modal {
+    position: relative !important;
+    width: 360px !important;
+    height: 640px !important;
+    margin: auto !important;
+    border: 16px black solid !important;
+    border-top-width: 60px !important;
+    border-bottom-width: 60px !important;
+    border-radius: 36px !important;
+  }
 
-.modal-content {
-  width: 100%;
-  max-width: 105vh;
-  padding-top: 12vh;
-  margin: 0 auto;
-  position: relative;
+  #modal:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+
+  #modal:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+
+  #modal-content {
+    width: 360px;
+    height: 640px;
+    background: white;
+  }
+  .modal-content h4 {
+    padding: 0 2px;
+  }
+
+  .modal-content h5 {
+    padding: 2px 5px;
+  }
+
+  .modal-content ol {
+    padding: 0 5px;
+  }
+
+  .modal-content ol > li {
+    margin-bottom: 2px;
+  }
 }
+*/

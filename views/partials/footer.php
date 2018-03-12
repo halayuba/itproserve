@@ -84,14 +84,18 @@
 
               <!-- FACEBOOK -->
               <li class="list-inline-item g-mr-10">
-                <a class="grab u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v2 g-brd-primary--hover g-rounded-5" href="#!">
-                  <i class="fa fa-facebook"></i></a>
+                <a class="u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v2 g-brd-primary--hover g-rounded-5" href="#!"
+                  @click.prevent="callSweetAlert"
+                >
+                  <i class="fa fa-facebook" data-toggle="tooltip" data-original-title="Facebook" data-placement="top"></i></a>
               </li>
 
               <!-- GOOGLE PLUS -->
               <li class="list-inline-item g-mr-10">
-                <a class="grab u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v2 g-brd-primary--hover g-rounded-5" href="#!">
-                  <i class="fa fa-google-plus" data-toggle="tooltip" data-original-title="Join ongoogle-plus" data-placement="top"></i></a>
+                <a class="u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v2 g-brd-primary--hover g-rounded-5" href="#!"
+                  @click.prevent="callSweetAlert"
+                >
+                  <i class="fa fa-google-plus" data-toggle="tooltip" data-original-title="Google plus" data-placement="top"></i></a>
               </li>
 
             </ul>

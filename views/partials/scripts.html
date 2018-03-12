@@ -6,6 +6,7 @@
 <!-- JS Implementing Plugins -->
 <script src="public/vendor/appear.js"></script>
 <script src="public/vendor/slick-carousel/slick/slick.js"></script>
+<script src="public/vendor/custombox/custombox.min.js"></script>
 
 <!-- JS Unify -->
 <script src="public/vendor/hs.core.js"></script>
@@ -15,6 +16,7 @@
 <script src="public/vendor/helpers/hs.height-calc.js"></script>
 <script src="public/vendor/components/hs.carousel.js"></script>
 <script src="public/vendor/components/hs.go-to.js"></script>
+<script src="public/vendor/components/hs.modal-window.js"></script>
 
 <!-- VUE JS -->
 <script src="public/js/vue.min.js"></script>
@@ -32,6 +34,8 @@
         $('#carousel5').slick('slickGoTo', i);
       }
     });
+
+    $.HSCore.components.HSModalWindow.init('[data-modal-target]');
 
     $.HSCore.components.HSCarousel.init('.js-carousel');
 
@@ -52,19 +56,4 @@
       duration: 700
     });
   });
-</script>
-
-<script>
-    $('.grab').click(function(e){
-        e.preventDefault();
-        callSweetAlert();
-    });
-    function callSweetAlert()
-    {
-        swal({
-            text: 'Coming Soon',
-            timer: 4000,
-            type: 'info'
-        });
-    }
 </script>
