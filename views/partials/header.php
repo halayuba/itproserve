@@ -7,7 +7,7 @@
       <div class="container g-pos-rel">
 
         <!-- Logo -->
-        <a href="#!" class="js-go-to navbar-brand u-header__logo g-width-130 g-mr-60" data-type="static">
+        <a href="#!" class="js-go-to navbar-brand u-header__logo g-mr-60" data-type="static">
           <img class="img-fluid u-header__logo-img u-header__logo-img--main g-mr-60" src="public/img/logo4.png">
         </a>
 
