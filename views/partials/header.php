@@ -8,7 +8,7 @@
 
         <!-- Logo -->
         <a href="#!" class="js-go-to navbar-brand u-header__logo g-mr-60" data-type="static">
-          <img class="img-fluid u-header__logo-img u-header__logo-img--main g-mr-60" src="public/img/logo4.png">
+          <img class="img-fluid u-header__logo-img u-header__logo-img--main g-mr-60" src="public/img/logo4.png" alt="ITPROSERVE" title="ITPROSERVE">
         </a>
 
         <!-- Navigation BAR -->
