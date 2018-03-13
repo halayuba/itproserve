@@ -29,6 +29,9 @@
                 <a href="#ourProjects" class="nav-link p-0">Projects</a>
               </li>
               <li class="nav-item g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
+                <a href="#career" class="nav-link p-0">Career</a>
+              </li>
+              <li class="nav-item g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
                 <a href="#bestOffers" class="nav-link p-0">Pricing</a>
               </li>
             </ul>

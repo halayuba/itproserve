@@ -25,6 +25,9 @@
         <!-- PROJECTS -->
         <?php require_once('partials/projects.php'); ?>
 
+        <!-- CAREER -->
+        <?php require_once('partials/career.php'); ?>
+
         <!-- HERO -->
         <?php require_once('partials/hero.html'); ?>
 
@@ -39,7 +42,7 @@
 
         <!-- FOOTER -->
         <?php require_once('partials/footer.php'); ?>
-        
+
       </div>
 
       <a class="js-go-to u-go-to-v1" href="#!"

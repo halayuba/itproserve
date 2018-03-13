@@ -31,7 +31,10 @@
                 <a class="g-color-gray-dark-v5" href="#services">Services</a>
               </li>
               <li class="g-mb-10">
-                <a class="g-color-gray-dark-v5" href="#ourProjects">Our projects</a>
+                <a class="g-color-gray-dark-v5" href="#ourProjects">Projects</a>
+              </li>
+              <li class="g-mb-10">
+                <a class="g-color-gray-dark-v5" href="#career">Career</a>
               </li>
               <li class="g-mb-10">
                 <a class="g-color-gray-dark-v5" href="#bestOffers">Pricing</a>
