@@ -27,7 +27,7 @@
 
           <div class="media-body">
             <h3 class="h6 text-uppercase g-font-weight-800 g-color-white mb-20">Experienced</h3>
-            <p class="g-font-size-default g-color-gray-light-v4 mb-0"><strong>ITproSERVE</strong> is a close-knit group of committed professionals who know they're among the best at what they do. We take pride in our work and when you work for us, you will be part of a rapidly-growing technical consultant team.</p>
+            <p class="g-font-size-default g-color-gray-light-v4 mb-0"><strong>ITproSERVE</strong> is a close-knit group of committed professionals who know they are among the best at what they do. We take pride in our work and when you work for us, you will be part of a rapidly-growing technical consultant team.</p>
           </div>
         </div>
 
