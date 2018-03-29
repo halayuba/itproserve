@@ -44,7 +44,7 @@
       <!-- FLEX MENU -->
       <div class="col-md-4">
         <article class="g-bg-gray-light-v5">
-          <a href="http://www.flexmenu.io"><img class="img-fluid w-100" src="public/img/projects_flexmenu.png" alt="Image description"></a>
+          <a href="#"><img class="img-fluid w-100" src="public/img/projects_flexmenu.png" alt="Image description"></a>
 
           <div class="g-pa-30">
             <h3 class="text-uppercase g-font-weight-700 g-font-size-default g-mb-20">

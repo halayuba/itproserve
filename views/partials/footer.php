@@ -48,7 +48,7 @@
               <li class="media mb-4">
                 <i class="d-flex mt-1 mr-3 icon-hotel-restaurant-235 u-line-icon-pro"></i>
                 <div class="media-body">
-                  9333 Blue Ridge Blvd. Kansas City, MO. 64138
+                    Simon Bashir <br /> 9333 Blue Ridge Blvd. <br /> Kansas City, MO. 64138
                 </div>
               </li>
               <li class="media mb-4">
