@@ -29,11 +29,11 @@
       <!-- FLEX TASKS -->
       <div class="col-md-4 g-mb-30 g-mb-0--md">
         <article class="g-bg-gray-light-v5">
-          <a href="http://​www.xcutable.com"><img class="img-fluid w-100" src="public/img/projects_flextasks.png"></a>
+          <a href="http://www.flextasks.io"><img class="img-fluid w-100" src="public/img/projects_flextasks.png"></a>
 
           <div class="g-pa-30">
             <h3 class="text-uppercase g-font-weight-700 g-font-size-default g-mb-20">
-              <a href="http://www.xcutable.com" class="g-color-gray-dark-v1 g-color-primary--hover">Flex Tasks ( ​www.flextasks.io ​)</a>
+              <a href="http://www.flextasks.io" class="g-color-gray-dark-v1 g-color-primary--hover">Flex Tasks ( www.flextasks.io )</a>
             </h3>
 
             <p class="mb-0">The aim of this bug reporting package is to streamline communication among team members and to give a snapshot overview and a realistic estimate on the project completion progress, bugs and code fixes, tasks, activities, and deliverables related to individual Sprints within a project development.</p>
