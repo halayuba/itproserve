@@ -15,7 +15,7 @@
       <div class="row mx-0">
         <div class="col-sm-7 col-md-6 text-center text-md-left g-theme-bg-gray-dark-v1 g-py-50 g-py-100--md g-px-15 g-px-50--md">
           <h3 class="text-uppercase g-font-weight-800 g-font-size-default i_color g-mb-25">SERVICES</h3>
-          <p class="g-mb-10">Website design &emp; development</p>
+          <p class="g-mb-10">Website design &amp; development</p>
           <p class="g-mb-10">CMS / Forum / Blog development</p>
           <p class="g-mb-10">Customized Restaurant solution</p>
           <p class="g-mb-10">Customized eCommerce solution</p>
@@ -55,7 +55,7 @@
           <p class="g-mb-10">Process / Data Modeling</p>
           <p class="g-mb-10">Quality Assurance / Bug reporting / User Acceptance Testing</p>
           <p class="g-mb-10">Source Code Management / Git / Github / Bitbucket</p>
-          <p class="g-mb-10">Media &emp; Digital Marketing</p>
+          <p class="g-mb-10">Media &amp; Digital Marketing</p>
         </div>
 
         <div class="col-sm-5 col-md-6 g-min-height-360 g-bg-img-hero g-px-0" style="background-image: url(public/img/disciplines.jpg);"></div>
