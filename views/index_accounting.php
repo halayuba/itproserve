@@ -41,7 +41,7 @@
         <?php require_once('partials/modal.php'); ?>
 
         <!-- MODAL JOB -->
-        <?php require_once('partials/modalJob.php'); ?>
+        <?php require_once('partials/modalJobMarketing.php'); ?>
 
         <!-- FOOTER -->
         <?php require_once('partials/footer.php'); ?>
