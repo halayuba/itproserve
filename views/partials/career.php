@@ -42,7 +42,7 @@
           </div>
         </div>
 
-        <a href="mailto:career@itproserve.com" class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 rounded-0 g-px-25 g-py-10 mb-0">Send your resume</a>
+        <a class="modal_link primary" href="#modal2" data-modal-target="#modal2" data-modal-effect="fadein">Current openings ...</a>
 
       </div>
 

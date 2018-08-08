@@ -40,6 +40,9 @@
         <!-- MODAL -->
         <?php require_once('partials/modal.php'); ?>
 
+        <!-- MODAL JOB -->
+        <?php require_once('partials/modalJob.php'); ?>
+
         <!-- FOOTER -->
         <?php require_once('partials/footer.php'); ?>
 
