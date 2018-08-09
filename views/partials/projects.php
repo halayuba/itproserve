@@ -44,11 +44,11 @@
       <!-- FLEX MENU -->
       <div class="col-md-4">
         <article class="g-bg-gray-light-v5">
-          <a href="#"><img class="img-fluid w-100" src="public/img/projects_flexmenu.png" alt="Image description"></a>
+          <img class="img-fluid w-100" src="public/img/projects_flexmenu.png" alt="Image description">
 
           <div class="g-pa-30">
             <h3 class="text-uppercase g-font-weight-700 g-font-size-default g-mb-20">
-              <a href="http://www.flexmenu.io" class="g-color-gray-dark-v1 g-color-primary--hover">Flex Menu ( ​www.flexmenu.io ​)</a>
+              Flex Menu
             </h3>
             <h5 class="g-font-weight-700 g-font-size-12 g-mb-20">Soon to be launched</h5>
 
