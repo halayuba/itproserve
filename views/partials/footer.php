@@ -16,6 +16,7 @@
 
             <ul class="list-unstyled g-mb-30 g-mb-0--md">
               <li class="g-mb-10">Web design and development</li>
+              <li class="g-mb-10">Customized CMS solutions</li>
               <li class="g-mb-10">Customized restaurant solutions</li>
               <li class="g-mb-10">Customized shopping cart solutions</li>
             </ul>
@@ -48,7 +49,7 @@
               <li class="media mb-4">
                 <i class="d-flex mt-1 mr-3 icon-hotel-restaurant-235 u-line-icon-pro"></i>
                 <div class="media-body">
-                    Simon Bashir <br /> 9333 Blue Ridge Blvd. <br /> Kansas City, MO. 64138
+                    Simon Bashir <br /> Kansas City, MO. 64138
                 </div>
               </li>
               <li class="media mb-4">
@@ -60,7 +61,7 @@
               <li class="media mb-4">
                 <i class="d-flex mt-1 mr-3 icon-communication-033 u-line-icon-pro"></i>
                 <div class="media-body">
-                  (816) 745 - 5951
+                  (816) 824 - 6870
                 </div>
               </li>
             </ul>
@@ -91,14 +92,6 @@
                   @click.prevent="callSweetAlert"
                 >
                   <i class="fa fa-facebook" data-toggle="tooltip" data-original-title="Facebook" data-placement="top"></i></a>
-              </li>
-
-              <!-- GOOGLE PLUS -->
-              <li class="list-inline-item g-mr-10">
-                <a class="u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v2 g-brd-primary--hover g-rounded-5" href="#!"
-                  @click.prevent="callSweetAlert"
-                >
-                  <i class="fa fa-google-plus" data-toggle="tooltip" data-original-title="Google plus" data-placement="top"></i></a>
               </li>
 
             </ul>
