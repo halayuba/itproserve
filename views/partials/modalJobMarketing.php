@@ -6,7 +6,7 @@
   <h4 class="g-mb-20">Digital Marketing Assistant</h4>
 
   <p><strong>Location:</strong> Kansas City</p>
-  <p><strong>Starting date:</strong> August / September</p>
+  <p><strong>Starting date:</strong> December 3rd, 2018</p>
   <p><strong>Salary:</strong> Competitive</p>
   <p><strong>Employment type:</strong> Full-time</p>
   <p><strong>Job description:</strong></p>
