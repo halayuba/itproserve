@@ -7,7 +7,7 @@
         <!-- THE COMPANY -->
         <div class="g-py-50 g-px-15 g-pa-50--md">
           <h3 class="text-uppercase g-font-weight-800 g-font-size-default i_color g-mb-15">The Company</h3>
-          <p class="mb-0">When you choose ITproSERVE, you are assured to work with professional people who can understand your needs and can transform your business requirements into quality attractive web designs and effective dynamic solutions.</p>
+          <p class="mb-0">When you choose ITproSERVE, you are assured to work with professional people who can understand your needs and can transform your business requirements into quality attractive web designs and effective dynamic business solutions.</p>
         </div>
       </div>
 
