@@ -3,8 +3,7 @@
     <div class="container g-max-width-770">
       <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-color-gray-dark-v1 g-mb-30">Our projects</h2>
 
-      <p class="mb-0">From a very basic static websites (<a href="http://dashemirates.com/">Dash Emirates</a> and <a href="http://refugeenewhome.org/">Refugee New Home</a>), to generic industry dashboards, to more complex tailer-made business and <a href="http://lazeeza.us">ecommerce</a> solutions, we can meet all your technology needs.</p>
-      <p>We are currently working on a variety of challenging projects.</p>
+      <p class="mb-0">From basic static websites to generic industry dashboards, to more complex tailer-made business and <a href="http://lazeeza.us">ecommerce</a> solutions, we can meet all your technology needs. We are currently working on a variety of challenging projects.</p>
     </div>
   </div>
 
