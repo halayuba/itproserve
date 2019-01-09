@@ -49,7 +49,7 @@
               <li class="media mb-4">
                 <i class="d-flex mt-1 mr-3 icon-hotel-restaurant-235 u-line-icon-pro"></i>
                 <div class="media-body">
-                    Simon Bashir <br /> Kansas City, MO. 64138
+                    Simon Bashir <br /> Kansas City, MO.
                 </div>
               </li>
               <li class="media mb-4">
