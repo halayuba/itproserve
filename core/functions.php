@@ -7,7 +7,7 @@
 function spam_scrubber($value)
 {
   // List of very bad values:
-  $very_bad = array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:');
+  $very_bad = array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:', '<a href', );
   // If any of the very bad strings are in the submitted value, return an empty string
   foreach ($very_bad as $v) {
     if (stripos($value, $v) !== false) return '';
@@ -110,7 +110,7 @@ function spam_email($email)
 
 function spam_message($haystack)
 {
-  $needles = ['cheap parking', 'jersey city', 'gear cheap'];
+  $needles = ['cheap parking', 'jersey city', 'gear cheap', 'cheapbuy', 'onlinebuycytotec', 'ankor'];
   foreach($needles as $needle){
     if(stripos($haystack, $needle) !== false) return true;
   }
