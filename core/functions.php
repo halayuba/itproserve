@@ -110,7 +110,7 @@ function spam_email($email)
 
 function spam_message($haystack)
 {
-  $needles = ['cheap parking', 'jersey city', 'gear cheap', 'cheapbuy', 'onlinebuycytotec', 'ankor', 'Prednisone', 'mewkid'];
+  $needles = ['cheap parking', 'jersey city', 'gear cheap', 'cheapbuy', 'onlinebuycytotec', 'ankor', 'Prednisone', 'mewkid', 'http://', '<a href'];
   foreach($needles as $needle){
     if(stripos($haystack, $needle) !== false) return true;
   }

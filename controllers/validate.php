@@ -28,9 +28,6 @@
       /* == VALIDATE NAME - THE LENGTH FIRST & LAST NAME COULD NOT BE JUST 3 CHARACTEERS == */
       if(!confirm_charMinMax($name,3,70)) $errors[] = "Please enter your full name - can't be shorter than 4 characters or longer than 70 characters.";
 
-      /* == VALIDATE COMMENT - THE LENGTH OF THE COMMENT == */
-      if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the 'Comment' box.";
-
       /* == VALIDATE EMAIL - check for incorrect email format == */
       if( !filter_var($email, FILTER_VALIDATE_EMAIL) ) $errors[] = "The email provided cannot be verified or has an incorrect format.";
 
@@ -39,6 +36,9 @@
 
       /* == ATTEMPT TO BLOCK SPAM MAIL == */
       if(spam_email($email)) $errors[] = "Possible email spam. Your email is unfortunately rejected.";
+
+      /* == VALIDATE COMMENT - THE LENGTH OF THE COMMENT == */
+      if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the 'Comment' box.";
 
       if(empty($errors)){
         $sendEmail = new EmailClass();
@@ -63,5 +63,5 @@
     }
     $session->process_message($result);
     redirect_to('home');
-    
+
   } // End FORM SUBMISSION
