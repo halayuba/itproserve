@@ -3,11 +3,11 @@
   $errors = [];
   $result = '';
 
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') // && !empty($errors)
-  // if (isset($_POST['frm_contactUs']))
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') // && !empty($errors) if (isset($_POST['frm_contactUs']))
   {
     global $session;
-    // Minimal form validation:
+
+    /* == Minimal form validation: == */
     if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['comment']) ) {
       $name = $_POST['name'];
       $comment = spam_scrubber($_POST['comment']);
@@ -22,20 +22,22 @@
       //---
       // if(!$session->perform_csrf_test($_POST['token'])) $errors[] = "Token mismatch: possible CSRF attack. Please refresh the page and try again ..";
 
-      //VALIDATE NAME - check if name only contains letters and whitespace
+      /* == VALIDATE NAME - check if name only contains letters and whitespace == */
       if(!confirm_text_field($name)) $errors[] = "The value for the name is not acceptable! Only letters and white space are allowed for the name.";
 
-      //VALIDATE NAME - THE LENGTH FIRST & LAST NAME COULD NOT BE JUST 3 CHARACTEERS
+      /* == VALIDATE NAME - THE LENGTH FIRST & LAST NAME COULD NOT BE JUST 3 CHARACTEERS == */
       if(!confirm_charMinMax($name,3,70)) $errors[] = "Please enter your full name - can't be shorter than 4 characters or longer than 70 characters.";
 
-      //VALIDATE NAME - THE LENGTH OF THE COMMENT
-      if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the description in the 'Question / Comment' box.";
-      //ATTEMPT TO BLOCK MESSAGES CONTAINING CERTAIN WORDS
+      /* == VALIDATE COMMENT - THE LENGTH OF THE COMMENT == */
+      if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the 'Comment' box.";
+
+      /* == VALIDATE EMAIL - check for incorrect email format == */
+      if( !filter_var($email, FILTER_VALIDATE_EMAIL) ) $errors[] = "The email provided cannot be verified or has an incorrect format.";
+
+      /* == ATTEMPT TO BLOCK MESSAGES CONTAINING CERTAIN WORDS == */
       if(spam_message($comment)) $errors[] = "Possible spam. Your comment is unfortunately rejected.";
 
-      // form validation - check for incorrect email format
-      if( !filter_var($email, FILTER_VALIDATE_EMAIL) ) $errors[] = "The email provided cannot be verified or has an incorrect format.";
-      //ATTEMPT TO BLOCK SPAM MAIL
+      /* == ATTEMPT TO BLOCK SPAM MAIL == */
       if(spam_email($email)) $errors[] = "Possible email spam. Your email is unfortunately rejected.";
 
       if(empty($errors)){
@@ -61,4 +63,5 @@
     }
     $session->process_message($result);
     redirect_to('home');
+    
   } // End FORM SUBMISSION

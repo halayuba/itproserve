@@ -101,7 +101,7 @@ function post_captcha($user_response)
 
 function spam_email($email)
 {
-  $needles = ['darrenwindeyer@t-online.de'];
+  $needles = ['darrenwindeyer@t-online.de', 'edaoyewuh@email.manidn.com'];
   foreach($needles as $needle){
     if($email == $needle) return true;
   }
