@@ -13,8 +13,8 @@
       $comment = spam_scrubber($_POST['comment']);
       $email = spam_scrubber($_POST['email']);
 
-      //USI NG GOOGLE reCAPTCHA
-      //---
+       //== USING GOOGLE reCAPTCHA
+      //====================
       $res = post_captcha($_POST['g-recaptcha-response']);
       if (!$res['success']) $errors[] = "The security CAPTCHA box must be checked";
 
@@ -31,7 +31,7 @@
       //VALIDATE NAME - THE LENGTH OF THE COMMENT
       if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the description in the 'Question / Comment' box.";
       //ATTEMPT TO BLOCK MESSAGES CONTAINING CERTAIN WORDS
-      if(spam_message($comment)) $errors[] = "Possible email spam. Your email is unfortunately rejected.";
+      if(spam_message($comment)) $errors[] = "Possible spam. Your comment is unfortunately rejected.";
 
       // form validation - check for incorrect email format
       if( !filter_var($email, FILTER_VALIDATE_EMAIL) ) $errors[] = "The email provided cannot be verified or has an incorrect format.";

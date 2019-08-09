@@ -10,9 +10,7 @@
     <?php
         // if(empty($errors) && isset($message)){
         if(isset($message) && $message){
-          echo '<div class="text-center"
-                  v-show="isVisible"
-                >';
+          echo '<div class="text-center">';
           echo $message.'</div>';
         }
         include 'form.php';

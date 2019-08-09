@@ -25,7 +25,7 @@ Class EmailClass {
     $mail->Host       = "smtpout.secureserver.net";
 		$mail->SMTPAuth   = true;
 		$mail->Username		= "admin@itproserve.com";
-		$mail->Password 	= "smaJ8831";
+		$mail->Password 	= "halaYuba66";
 		$mail->SMTPSecure = "none";
     $mail->Port       = "80";
 

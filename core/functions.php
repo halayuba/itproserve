@@ -7,7 +7,7 @@
 function spam_scrubber($value)
 {
   // List of very bad values:
-  $very_bad = array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:', '<a href', );
+  $very_bad = array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:', '<a href', 'http://', 'edaoyewuh', 'manidn');
   // If any of the very bad strings are in the submitted value, return an empty string
   foreach ($very_bad as $v) {
     if (stripos($value, $v) !== false) return '';
@@ -61,8 +61,8 @@ function redirect_to ($page = 'home')
     exit();
 }
 
-//--MUST BE BEFORE THE FORM GETS SUBMITTED - contactUs
-//------------
+ //== MUST BE BEFORE THE FORM GETS SUBMITTED - contactUs
+//====================
 function capture_prep_field($var)
 {
    if(isset($_POST[$var]) && !empty($_POST[$var]))
@@ -110,7 +110,7 @@ function spam_email($email)
 
 function spam_message($haystack)
 {
-  $needles = ['cheap parking', 'jersey city', 'gear cheap', 'cheapbuy', 'onlinebuycytotec', 'ankor'];
+  $needles = ['cheap parking', 'jersey city', 'gear cheap', 'cheapbuy', 'onlinebuycytotec', 'ankor', 'Prednisone', 'mewkid'];
   foreach($needles as $needle){
     if(stripos($haystack, $needle) !== false) return true;
   }

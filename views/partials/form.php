@@ -1,30 +1,51 @@
-<form method="post">
+<form method="post"
+  @submit="submitForm"
+>
+
+  <!-- ALERT MESSAGE -->
+  <div class="mb-8"
+    v-if="flag"
+  >
+    <div class="bg-indigo-100 border border-indigo-400 text-indigo-700 px-4 py-3 rounded relative text-left" role="alert">
+      <span class="block sm:inline">All fields are required.</span>
+    </div>
+  </div>
+
   <div class="row">
 
     <!-- NAME -->
     <div class="col-md-6 form-group g-color-gray-dark-v5 g-mb-30">
       <input name="name" type="text" class="form-control g-font-size-default g-placeholder-inherit g-bg-white g-bg-white--focus g-theme-brd-gray-light-v1 g-rounded-20 g-px-10 g-py-13" placeholder="Your name" required
-        v-model="fld_name"
+        v-model="form.name"
         @blur="nameFieldValidation"
         @focusin="removeMsg('name')"
       >
-      <div class="red_color"
-        v-show="flag"
-      >The name is empty or too short!</div>
+      <p class="text-red-600 text-xs italic mt-1"
+        v-if="formErrors.name"
+      >
+        {{ formErrors.name }}
+      </p>
     </div>
 
     <!-- EMAIL -->
     <div class="col-md-6 form-group g-color-gray-dark-v5 g-mb-30">
       <?php $email = capture_prep_field('email'); ?>
-      <input name="email" type="email" class="form-control g-font-size-default g-placeholder-inherit g-bg-white g-bg-white--focus g-theme-brd-gray-light-v1 g-rounded-20 g-px-10 g-py-13" value="<?= $email; ?>" placeholder="<?php if(empty($email)) echo 'your_email@email.com'; ?>" required
-        @focusin="emailFieldVaildation"
+      <input name="email" type="email" class="form-control g-font-size-default g-placeholder-inherit g-bg-white g-bg-white--focus g-theme-brd-gray-light-v1 g-rounded-20 g-px-10 g-py-13" value="<?= $email; ?>" placeholder="<?php if(empty($email)) echo 'Your email'; ?>" required
+        v-model="form.email"
+        @blur="emailFieldVaildation"
+        @focusin="removeMsg('email')"
       >
+      <p class="text-red-600 text-xs italic mt-1"
+        v-if="formErrors.email"
+      >
+        {{ formErrors.email }}
+      </p>
     </div>
 
     <!-- MESSAGE -->
     <div class="col-md-12 form-group g-color-gray-dark-v5 g-mb-30">
       <textarea name="comment" class="form-control g-resize-none g-font-size-default g-placeholder-inherit g-bg-white g-bg-white--focus g-theme-brd-gray-light-v1 g-rounded-20 g-px-10 g-py-13" rows="6" placeholder="Message" required
-        v-model.trim="fld_comment"
+        v-model="form.comment"
         @blur="textareaFieldValidation"
         @focusin="removeMsg('comment')"
       >
@@ -32,11 +53,12 @@
       </textarea>
 
       <small class="form-text text-muted">(max. 400 characters)</small>
-      <div class="red_color"
-        v-show="flag_textarea"
-      >You've been very brief. Please give more details!
-      </div>
-      <span>{{ field_length_remaining }}</span>
+      <p class="text-red-600 text-xs italic mt-1"
+        v-if="formErrors.comment"
+      >
+        {{ formErrors.comment }}
+      </p>
+      <span class="text-indigo-500">{{ field_length_remaining }}</span>
     </div>
 
     <!-- GOOGLE RECAPTCHA -->
@@ -48,7 +70,8 @@
 
   <div class="text-center">
     <button class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 g-rounded-30 g-px-40 g-py-15 mb-0" type="submit" role="button"
-      :disabled="btn_disabled"
+      :disabled="formEditNotReady"
+      :class="btnState"
     >Send message</button>
   </div>
 </form>
