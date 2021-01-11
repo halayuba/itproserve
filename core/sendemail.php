@@ -22,12 +22,12 @@ Class EmailClass {
 		$mail->CharSet = 'utf-8';
 		$mail->SMTPDebug  = 0;
 		$mail->isSMTP();
-    $mail->Host       = "smtpout.secureserver.net";
+        $mail->Host       = "smtpout.secureserver.net";
 		$mail->SMTPAuth   = true;
 		$mail->Username		= "admin@itproserve.com";
-		$mail->Password 	= "halaYuba66";
+		$mail->Password 	= "smaJ8831";
 		$mail->SMTPSecure = "none";
-    $mail->Port       = "80";
+        $mail->Port       = "80";
 
 		$mail->setFrom($this->fromEmail, $this->fromName);
 		$mail->addAddress($this->toEmail, $this->toName);

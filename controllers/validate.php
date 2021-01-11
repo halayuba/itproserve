@@ -31,11 +31,11 @@
       /* == VALIDATE EMAIL - check for incorrect email format == */
       if( !filter_var($email, FILTER_VALIDATE_EMAIL) ) $errors[] = "The email provided cannot be verified or has an incorrect format.";
 
-      /* == ATTEMPT TO BLOCK MESSAGES CONTAINING CERTAIN WORDS == */
-      if(spam_message($comment)) $errors[] = "Possible spam. Your comment is unfortunately rejected.";
-
       /* == ATTEMPT TO BLOCK SPAM MAIL == */
       if(spam_email($email)) $errors[] = "Possible email spam. Your email is unfortunately rejected.";
+
+      /* == ATTEMPT TO BLOCK MESSAGES CONTAINING CERTAIN WORDS == */
+      if(spam_message($comment)) $errors[] = "Possible spam. Your comment is unfortunately rejected.";
 
       /* == VALIDATE COMMENT - THE LENGTH OF THE COMMENT == */
       if(!confirm_charMinMax($comment,6,400)) $errors[] = "Please enter [a minimum of 6 characters and 400 max] for the 'Comment' box.";
