@@ -1,5 +1,0 @@
-{
-    "require": {
-        "lorisleiva/laravel-deployer": "^0.3.5"
-    }
-}
